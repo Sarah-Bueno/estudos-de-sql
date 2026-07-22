@@ -17,3 +17,10 @@ WHERE uf in ('PR', 'SP', 'MG');
 SELECT *
 FROM produtos
 WHERE preco > 100;
+
+-- Seleciona todas as colunas da tabela clientes em que o cliente é do RS ou de SC.
+-- OR: é um operador lógico em que uma das sentenças deve ser verdadeira.
+SELECT *
+FROM clientes
+WHERE Estado = 'RS'
+OR estado = 'SC';
