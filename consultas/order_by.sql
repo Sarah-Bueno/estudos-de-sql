@@ -10,7 +10,16 @@ FROM clientes
 ORDER BY cod_cliente;
 
 -- selecione todas as colunas da tabela ordens públicas em que a data da ordem está no formato decrescente.
+-- desc: valores decrescentes.
 
 SELECT * 
 FROM ordens_públicas 
 ORDER BY data_ordem desc;
+
+-- selecione todas as colunas da tabela clientes em que a coluna código cliente exiba apenas 2 linhas.
+-- LIMIT: O operador limita a quantidade de linhas exibida.
+
+SELECT *
+FROM clientes
+ORDER BY cod_cliente
+LIMIT 2;
