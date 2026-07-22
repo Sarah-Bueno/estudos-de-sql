@@ -16,3 +16,9 @@ FROM nome_tabela;
 -- distinct: valores distintos
 SELECT distinct nome 
 FROM nome_tabela;
+
+-- selecione a coluna nome do produto, preço da unidade, unidades em estoque e multiplique a unidades de preço por unidades em estoque renomeando o nome da coluna para preço total com o resultado da tabela produto .
+-- * : operador aritmético de multiplicação.
+
+SELECT ProductName, UnitPrice, UnitsInStock, UnitPrice * UnitsInStock as TotalPrice
+FROM Product;
