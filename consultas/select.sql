@@ -13,5 +13,6 @@ SELECT nome as novo_nome
 FROM nome_tabela;
 
 -- selecione valores distintos de uma coluna
+-- distinct: valores distintos
 SELECT distinct nome 
 FROM nome_tabela;
