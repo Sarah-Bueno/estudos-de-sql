@@ -22,3 +22,19 @@ FROM nome_tabela;
 
 SELECT ProductName, UnitPrice, UnitsInStock, UnitPrice * UnitsInStock as TotalPrice
 FROM Product;
+
+-- UNION: combina linhas de resultados de duas ou mais consultas. empilha os resultados de uma consulta sobre os de outra, desde que ambas tenham o mesmo número de colunas e tipos de dados compatíveis. 
+-- UNION(): Elimina linhas duplicadas do resultado final
+
+SELECT * 
+FROM pedidos_1
+UNION
+SELECT * FROM pedidos_2
+
+-- UNION ALL(): Mantém todos os registros, inclusive os repetidos.
+
+SELECT *
+FROM pedidos_1
+UNION ALL
+SELECT *
+FROM pedidos_2
